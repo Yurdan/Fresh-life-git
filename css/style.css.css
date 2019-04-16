@@ -1,0 +1,157 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900');
+*{
+    box-sizing: border-box;
+}
+* {
+    transition: all .1s ease-in;
+}
+body {
+    font: 300 17px/1.6 'Raleway', Arial, sans-serif;
+   
+}
+
+/* !!!! КОНТЕЙНЕР №1 !!!! */
+
+
+.ba-header {
+    background: white url(../img/img.png) center no-repeat;
+    background-size: 115% auto;
+    background-position-y: -2px;
+
+    height: 1000px;
+    position: relative;
+   
+}
+/* стили контейнера, будут применяться ко всем контейнерам этого макета */
+.ba-container {
+    max-width: 1210px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+/* ......................... */
+
+/* верхняя строка с логотипом и навигацией */
+.ba-container__top {
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 220px;
+}
+/* ...................... */
+.ba-container__nav {
+    text-align: right;
+}
+/* строка списка навигации */
+.ba-nav__list {          
+    display: inline-block;
+    list-style: none;
+}
+/* ..................... */
+
+/* ссылка навигации */
+.ba-nav__link {
+    color: black;
+    text-decoration: none;
+    padding-top: 5px;
+    
+}
+/* ................ */
+/* наведение на ссылку навигации */
+.ba-nav__link:hover {
+    border-top: 3px solid #ff6033;
+}
+/* ................... */
+
+/* модификатор списка */
+.ba-nav--modifier {
+    font-size: 16px;
+    font-weight: bold;
+ }
+ 
+/* модификатор строки списка */
+.ba-nav__list--modifier:not(:last-child) {
+    margin-right: 38px;
+}
+/* .................... */
+
+/* контент первого блока */
+
+/* h1 */
+.ba-headline-first {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+/* ................ */
+
+/* кнопка */
+.ba-link {
+    font-size: 20px;
+    font-weight: 300;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #ff6033;
+    color: white;
+}
+/* .......... */
+/* модификатор кнопки */
+.ba-link--fresh:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* ...................... */
+/* .....скролл....... */
+.ba-fresh__scroll {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+/* .............. */
+/* модификатор параграфа */
+.ba-text__fresh {
+    margin-bottom: 30px;
+}
+/* ............... */
+/* !!!!!! конец блока №1 !!!!!!!!!!!!! */
+
+/* !!!!!! блок №2 !!!!!!!!!*/
+
+.ba-about {
+    background-color: #00b1b1;
+}
+
+/* обвертка содержимого контейнера */
+.ba-container__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+/* ............. */
+
+/*  статья справа */
+.ba-about__article {
+    max-width: 500px;
+    color: white;
+}
+/* .................... */
+
+/* ..... заголовок h2 */
+.headline_second {
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+}
+/* ................. */
+
+
+
+
+

@@ -1,19 +1,22 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800,900');
-*{
+
+* {
     box-sizing: border-box;
 }
+
 * {
     transition: all .1s ease-in;
 }
+
 body {
     font: 300 17px/1.6 'Raleway', Arial, sans-serif;
-   
+
 }
+
 a {
     text-decoration: none;
 }
+
 figure {
     margin: 0;
 }
@@ -28,8 +31,9 @@ figure {
 
     height: 1000px;
     position: relative;
-   
+
 }
+
 /* стили контейнера, будут применяться ко всем контейнерам этого макета */
 .ba-container {
     max-width: 1210px;
@@ -37,8 +41,9 @@ figure {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
+
 /* ......................... */
 
 /* верхняя строка с логотипом и навигацией */
@@ -48,15 +53,18 @@ figure {
     justify-content: space-between;
     margin-bottom: 220px;
 }
+
 /* ...................... */
 .ba-container__nav {
     text-align: right;
 }
+
 /* строка списка навигации */
-.ba-nav__list {          
+.ba-nav__list {
     display: inline-block;
     list-style: none;
 }
+
 /* ..................... */
 
 /* ссылка навигации */
@@ -64,25 +72,28 @@ figure {
     color: black;
     text-decoration: none;
     padding-top: 5px;
-    
+
 }
+
 /* ................ */
 /* наведение на ссылку навигации */
 .ba-nav__link:hover {
     border-top: 3px solid #ff6033;
 }
+
 /* ................... */
 
 /* модификатор списка */
 .ba-nav--modifier {
     font-size: 16px;
     font-weight: bold;
- }
- 
+}
+
 /* модификатор строки списка */
 .ba-nav__list--modifier:not(:last-child) {
     margin-right: 38px;
 }
+
 /* .................... */
 
 /* контент первого блока */
@@ -93,6 +104,7 @@ figure {
     font-weight: 900;
     margin-bottom: 0;
 }
+
 /* ................ */
 
 /* кнопка */
@@ -106,6 +118,7 @@ figure {
     background-color: #ff6033;
     color: white;
 }
+
 /* .......... */
 /* модификатор кнопки */
 .ba-link:hover {
@@ -113,6 +126,7 @@ figure {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
+
 /* ...................... */
 /* .....скролл....... */
 .ba-fresh__scroll {
@@ -121,11 +135,13 @@ figure {
     left: 50%;
     transform: translateX(-50%)
 }
+
 /* .............. */
 /* модификатор параграфа */
 .ba-text__fresh {
     margin-bottom: 30px;
 }
+
 /* ............... */
 /* !!!!!! конец блока №1 !!!!!!!!!!!!! */
 
@@ -142,6 +158,7 @@ figure {
     align-items: center;
     padding-top: 10px;
 }
+
 /* ............. */
 
 /*  статья справа */
@@ -149,6 +166,7 @@ figure {
     max-width: 500px;
     color: white;
 }
+
 /* .................... */
 
 /* ..... заголовок h2 */
@@ -157,6 +175,7 @@ figure {
     font-weight: bold;
     margin: 0;
 }
+
 /* ................. */
 
 
@@ -165,6 +184,7 @@ figure {
 .ba-services {
     background-color: #70bfff;
 }
+
 /* ...обвертка для контента блока */
 .ba-container__cervices {
     padding-top: 130px;
@@ -174,12 +194,18 @@ figure {
     justify-content: space-between;
     align-items: center;
 }
+
+/* .....колонка с кнопками-ссылками */
 .ba-container__links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
 }
+
+/* ............... */
+
+/* кнопки-ссылки */
 .ba-links__button {
     width: 400px;
     height: 100px;
@@ -195,80 +221,352 @@ figure {
     background-color: #ffffff;
 
 }
+
 .ba-links__button:hover {
     background-color: aquamarine;
 }
 
+/* .................. */
+
 .ba-links:not(:last-child) {
-  margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
+
+/* блок h2 и картинки помидора */
 .ba-container__picture {
     position: relative;
 }
+
+/* ................ */
+
+/* ......h2......... */
 .headline_second--relative {
     position: relative;
     color: white;
     margin-bottom: 80px;
     z-index: 2;
 }
-.ba-img-potato {
+
+/* .............. */
+
+/* картинка помидора */
+.ba-img-tomato {
     position: absolute;
     left: 0;
-    top:-180px;
+    top: -180px;
     z-index: 1;
 }
+
+/* ............ */
 
 /* .........блок №4.......... */
 
 .ba-gallery {
     background-color: #ffe92f;
 }
-.ba-container__gallery {
+
+.ba-container__gallery,
+.ba-container__blog,
+.ba-container__contacts {
     padding-top: 45px;
     padding-bottom: 100px;
     text-align: center;
     min-width: 630px;
 }
-.ba-gallery__p {
+
+/* .......Р........ */
+.ba-gallery__p,
+.ba-blog__p {
     max-width: 630px;
     display: inline-block;
 }
+
+/* ............ */
+/* контейнер картинок */
 .ba-gallery__images {
     margin-bottom: 40px;
 }
+
+/* ............... */
+/* позиционирование картинок */
 .ba-food:nth-child(1) {
     margin-left: -8px;
     margin-right: 12px;
     float: left;
 }
+
 .ba-food:nth-child(2) {
     margin-top: 3px;
     margin-bottom: 13px;
 }
+
 .ba-food:nth-child(3) {
 
-margin-bottom: 13px;
+    margin-bottom: 13px;
 }
+
 .ba-food:nth-child(4) {
-margin-left: -3px;
-margin-right: 14px;
+    margin-left: -3px;
+    margin-right: 14px;
 }
+
 .ba-food:nth-child(5) {
     margin-right: -4px;
 }
 
+/* ................. */
+/* кнопка */
 .ba-link--gallery {
     background-color: #5585a2;
+}
 
+/* ................. */
+
+/* ......блок №5........ */
+
+.ba-subscribe {
+    background: url(../img/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.ba-container--padding {
+    padding-top: 135px;
+    padding-bottom: 164px;
+}
+
+.headline_second--subscribe {
+    font-size: 40px;
+}
+
+.ba-subscribe-p {
+    max-width: 570px;
+}
+
+/* .....input....... */
+.ba-input {
+    height: 50px;
+    width: 540px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #262626;
+    padding-left: 15px;
+    outline: none;
+
+}
+
+.ba-input:focus::placeholder {
+    font-size: 10px;
+    transform: translateY(-16px);
+    /* Сдвигаем вверх */
+    transition: all .2s ease-in;
+
+}
+
+/* кнопка формы */
+.ba-link--subscribe {
+    background-color: #96b92c;
+}
+
+/* .....блок №6........... */
+.ba-blog {
+    background-color: #b07cf7;
+    color: white;
+}
+
+.ba-blog__p {
+    max-width: 570px;
+    margin-bottom: 35px;
+}
+
+.ba-container__figure {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+
+}
+
+.ba-blog__images {
+    position: relative;
+    height: 309px;
+}
+
+/* градиент для картинки */
+.ba-blog__gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: #000; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), 80%, rgba(0, 0, 0, 0.788));
+    /* text-align: left; */
+    /* background: linear-gradient(to top left, powderblue, pink); */
+}
+
+/* ....дата вверху картинки */
+.ba-date {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 3px;
+    padding-right: auto;
+
+    width: 60px;
+    height: 60px;
+
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding-top: 2px;
+    color: #ffffff;
+}
+
+/* цифра в дате */
+.ba-date__number {
+    font-size: 32px;
+    display: inline-block;
+
+}
+
+/* 1я надпись в картинке */
+.ba-blog-image-p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+
+/* ...2я надпись в картинке... */
+.ba-blog-image-bottom-p {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+/* кнопка */
+.ba-link--blog {
+    background-color: #f72b3b;
+}
+
+/* блок №7 */
+.ba-contacts {
+    background: url(../img/contact.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* блок с формой и контактами */
+.ba-contact-block {
+    width: 100%;
+    clear: both;
+}
+
+.ba-contact-block:before,
+.ba-contact-block:after {
+    content: "";
+    display: table;
+}
+
+.ba-contact-block:after {
+    clear: both;
 }
 
 
 
 
+.ba-contact__p {
+    max-width: 370px;
+    margin-bottom: 40px;
+
+    display: inline-block;
+}
+
+/* форма */
+.ba-contact-form {
+    width: 40%;
+    float: left;
+}
+
+/* инпут. КЭП рулит)))))))) */
+.ba-contact-input {
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(117, 218, 219, 0.5);
+    border: none;
+    outline: none;
+    border-left: 5px solid transparent;
+}
+
+.ba-contact-input::placeholder {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.ba-contact-input:focus::placeholder {
+    font-size: 10px;
+    /* Размер шрифта */
+    transform: translateY(-16px);
+    transition: all .2s ease-in;
+}
+
+.ba-contact-input:focus {
+
+    background-color: rgba(0, 196, 196, 0.5);
+    border-left: 5px solid #355b82;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.ba-contact-textarea {
+    height: 250px;
+    padding-top: 20px;
+}
+
+/* блок с контактами */
+.ba-contact-data {
+    margin-top: -24px;
+    float: right;
+    width: 40%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.ba-adress {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.ba-info {
+    margin-top: 0;
+}
 
 
 
+/*.......футер....... */
+.ba-footer {
+    background: #262626;
+}
 
+.ba-container__footer {
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #b9b9b9;
 
+}
 
+.left-footer-p {
+    font-weight: bold;
+}
